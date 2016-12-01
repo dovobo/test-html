@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+    <title>Forms_Und_Co</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<!-- Dies ist ein HTML-Kommentar -->
+
+<body>
+<p><a href="./helloworld.html">HelloWorld</a></p>
+
+
+    <form>
+        <!-- Tag input in form Tag kann vershiedene type= haben z.B text email file checkbox -->
+        <!-- Mit value kann ich daten vorher eintragen bis sie überschrieben werden mit placeholder kann ich hinweise eintragen aber das feld ist leer-->
+        <p>Benutzername: <input type=text placeholder="John Doe"ALT="*"></p>
+        <p>Benutzername: <input type=text value="John Doe"></p>
+        <!-- checked wählt die checkbox aus -->
+        <p>Eingelogt bleiben: <input type=checkbox checked></p>
+
+        <!-- Durch den gleichen name="age" sind alle radioboxen verbunden -->
+        <p>Unter 18: <input type=radio name="age" value="u18" </p>
+        <p>Über 18: <input type=radio name="age" value="ü18" </p>
+        <p>Und UHU: <input type=radio name="age" value="uhu" </p>
+        <p>Lieblingsessen:
+            <select>
+                <option>Pizza</option>
+                <!-- selected wählt das eis aus -->
+                <option selected>Eis</option>
+                <option>Nudel</option>
+                <option>Falafel</option>
+                <option>Döner</option>
+            </select>
+        </p>
+        <p><input type="submit"value="klick mich"</p>
+     </form>
+ <hr>
+
+</body>
+</html>
