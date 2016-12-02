@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+    <head>
+        <title>kap2-css-floating und position</title>
+
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <style type="text/css">
+        /* Kommentare in CSS */
+        /* Alles mit floting */
+            #one {
+                color: blue;
+                background-color: pink;
+                width: 350px;
+                float: left;
+            }
+            #two {
+                color:#FCFCFC;
+                background-color: #5F5F5F;
+                width:250px;
+                float: left;
+            }
+            #three {
+                color:#FCFCFC;
+                background-color: #283847;
+                width:300px;
+                float: left;
+            }
+            #four {
+                color:#FCFCFC;
+                background-color: #283FFF;
+                width:450px;
+                float: left;
+            }
+            .clear-float {
+               clear:both
+            }
+            /* Alles mit position  */
+            #po-one {
+                color: blue;
+                background-color: pink;
+                width: 350px;
+                position: relative;
+                left:200px;
+            }
+            #po-two {
+                color:#FCFCFC;
+                background-color: #5F5F5F;
+                width:250px;
+                position: relative;
+                top: -60px;
+                left: 150px;
+            }
+            #po-three {
+                color:#FCFCFC;
+                background-color: #283847;
+                width:300px;
+                position: relative;
+                z-index: 2;
+                opacity: 0.5;
+            }
+            #po-four {
+                color:#FCFCFC;
+                background-color: #283FFF;
+                width:450px;
+                position: relative;
+                top:-80px;
+                left: 20px;
+                z-index: 1;
+            }
+     /* Der z-index legt die ebene fest wo das div liegt...höhere zahlen liegen oben */
+            #ab-one {
+                color: blue;
+                background-color: pink;
+                width: 350px;
+                position: absolute;
+                left:10;
+
+            }
+            #ab-two {
+                color:#FCFCFC;
+                background-color: #5F5F5F;
+                width:450px;
+
+            }
+            #ab-three {
+                color:black;
+                background-color: greenyellow;
+                width:300px;
+            /*    position: fixed;   */
+            /*  Mit fixed kann das div immer oben gehalten werden  */
+
+            }
+            #ab-four {
+                color:#FCFCFC;
+                background-color: #283FFF;
+                width:450px;
+
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="color:black;">CSS floating</h1>
+        <div id="one">
+            <p>Chatbots sollen Messenger wie WhatsApp oder Hangouts revolutionieren. Das sehen mittlerweile Facebook und Google so. Dass Facebook an dem Helferlein "M" forscht, ist bekannt. Google soll aber seit mehr als einem Jahr an einem ähnlichen Projekt arbeiten.</p>
+        </div>
+        <div id="two">
+            <p>Chatbots sollen Messenger wie WhatsApp oder Hangouts revolutionieren. Das sehen mittlerweile Facebook und Google so. Dass Facebook an dem Helferlein "M" forscht, ist bekannt. Google soll aber seit mehr als einem Jahr an einem ähnlichen Projekt arbeiten.</p>
+        </div>
+        <div id="three">
+            <p>Spanische Kunden dürfen den kontaktlosen Bezahldienst für iPhone und Apple Watch seit dieser Woche nutzen. Deutsche Kunden warten weiter.</p>
+        </div>
+        <div id="four">
+            <p>Microsoft holoportiert Leute aus dem Auto ins Büro Einer sitzt im Auto, virtuell aber im Büro bei einem Kollegen, der eine Hololens trägt: Microsoft arbeitet an in Echtzeit übertragbaren Hologrammen, allerdings klappt die Holoportation noch nicht mit mobilem Internet, sondern nur mit WLAN.</p>
+        </div>
+
+     <p class="clear-float">
+        CSS --- das innere Tag überschreibt das äußere <b>span >> id >> class</b><br>class beginnen im css mit . und id mit #
+    </p>
+    <hr>
+    <p><a href="https://blog.kulturbanause.de/2014/03/responsive-pinterest-style-layout-mit-css3/">Printrest Layout mit CSS Multiple Columns</a></p>
+     <hr>
+            <h1 style="color:black;">CSS relatives Position</h1>
+        <div id="po-one">
+            <p>Chatbots sollen Messenger wie WhatsApp oder Hangouts revolutionieren. Das sehen mittlerweile Facebook und Google so. Dass Facebook an dem Helferlein "M" forscht, ist bekannt. Google soll aber seit mehr als einem Jahr an einem ähnlichen Projekt arbeiten.</p>
+        </div>
+        <div id="po-two">
+            <p>Chatbots sollen Messenger wie WhatsApp oder Hangouts revolutionieren. Das sehen mittlerweile Facebook und Google so. Dass Facebook an dem Helferlein "M" forscht, ist bekannt. Google soll aber seit mehr als einem Jahr an einem ähnlichen Projekt arbeiten.</p>
+        </div>
+        <div id="po-three">
+            <p>Spanische Kunden dürfen den kontaktlosen Bezahldienst für iPhone und Apple Watch seit dieser Woche nutzen. Deutsche Kunden warten weiter.</p>
+        </div>
+        <div id="po-four">
+            <p>Microsoft holoportiert Leute aus dem Auto ins Büro Einer sitzt im Auto, virtuell aber im Büro bei einem Kollegen, der eine Hololens trägt: Microsoft arbeitet an in Echtzeit übertragbaren Hologrammen, allerdings klappt die Holoportation noch nicht mit mobilem Internet, sondern nur mit WLAN.</p>
+        </div>
+    <hr>
+        <p>Der z-index legt die ebene fest wo das div liegt...höhere zahlen liegen oben.<br> mit opacity legt man transparent fest 0 bis 1</p>
+    <hr>
+        <h1 style="color:black;">CSS absolutes Position</h1>
+        <div id="ab-one">
+            <p>Chatbots sollen Messenger wie WhatsApp oder Hangouts revolutionieren. Das sehen mittlerweile Facebook und Google so. Dass Facebook an dem Helferlein "M" forscht, ist bekannt. Google soll aber seit mehr als einem Jahr an einem ähnlichen Projekt arbeiten.</p>
+        </div>
+        <div id="ab-two">
+            <p>Chatbots sollen Messenger wie WhatsApp oder Hangouts revolutionieren. Das sehen mittlerweile Facebook und Google so. Dass Facebook an dem Helferlein "M" forscht, ist bekannt. Google soll aber seit mehr als einem Jahr an einem ähnlichen Projekt arbeiten.</p>
+        </div>
+        <div id="ab-three">
+            <p>Spanische Kunden dürfen den kontaktlosen Bezahldienst für iPhone und Apple Watch seit dieser Woche nutzen. Deutsche Kunden warten weiter.</p>
+        </div>
+        <div id="ab-four">
+            <p>Microsoft holoportiert Leute aus dem Auto ins Büro Einer sitzt im Auto, virtuell aber im Büro bei einem Kollegen, der eine Hololens trägt: Microsoft arbeitet an in Echtzeit übertragbaren Hologrammen, allerdings klappt die Holoportation noch nicht mit mobilem Internet, sondern nur mit WLAN.</p>
+        </div>
+    <hr>
+     <p><a href="../index.html">index</a></p>
+    </body>
+</html>
