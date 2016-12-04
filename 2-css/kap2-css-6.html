@@ -9,49 +9,111 @@
 
         <style type="text/css">
         /* Kommentare in CSS */
-        /* Alles mit floting */
+
             #one {
                 color: blue;
                 background-color: pink;
                 width: 350px;
+                /* margin rand äußen */
+                margin: 100px;
 
             }
             #two {
                 color:#FCFCFC;
                 background-color: #5F5F5F;
                 width:550px;
+                /* margin rand oben rechts unten links */
+                margin: 100px 50px 20px 25px;
+                /* margin oder margin-left margin-top margin-right margin-bottom*/
 
             }
             #three {
                 color:#FCFCFC;
                 background-color: #283847;
                 width:300px;
-
+                margin: 100px 0px 20px 0px;
             }
-            #four {
+             #pa-one {
+                color: blue;
+                background-color: pink;
+                width: 350px;
+                padding: 25px;
+               /* padding funktioniert genau so wie margin (schreibweise)
+                 padding wird zur größe (width/hight) addiert*/
+            }
+            #pa-two {
                 color:#FCFCFC;
-                background-color: #283FFF;
-                width:400px;
+                background-color: #5F5F5F;
+                width:550px;
+                padding: 25px 175px 30px 60px;
+            }
+            /*Man kann den default value des <body> <p> auch beeinflußen siehe nachfolgend. Der default-value kann bei den browser unterschiedlich sein
+            CSS Reset funktioniert so:
+            * { margin:0; padding:0; }
+            p { margin:5px 0 10px 0; }
+            */
+
+            body {margin: 0;padding: 0;line-height: 1;color: black;background: white;}
+            p {margin: 0;padding: 0;}
+
+
+
+            .square {
+                height: 100px;
+                width:300px;
+                margin: 40px;
+                padding: 30px;
+                background-color: red;
             }
 
+            #sq-a{  background-color: aqua;
+                    border: 2px black solid;
+                /* ALTERNATIVE
+                border-style: solid;
+                border-color: black;
+                border-width: 2px   */
+            }
+            #sq-b{background-color: forestgreen;
+                border-style: solid;
+                border-width: 5px 10px 25px 2px;
+                border-color: aqua red gray gold;
+
+            }
+            #sq-c{background-color: darkgray;
+                border-radius: 25px;
+                /* mit border-radius und der hälfe der breite des elemnte erhalten wir einen kreis  */
+            }
 
         </style>
     </head>
     <body>
-        <h1 style="color:black;">CSS margins padding borders</h1>
+        <h1 style="color:black;">CSS margins</h1>
         <div id="one">
             <p>Chatbots sollen Messenger wie WhatsApp oder Hangouts revolutionieren. Das sehen mittlerweile Facebook und Google so. Dass Facebook an dem Helferlein "M" forscht, ist bekannt. Google soll aber seit mehr als einem Jahr an einem ähnlichen Projekt arbeiten.</p>
         </div>
         <div id="two">
             <p>Wer die Fernwartungs-App AirDroid mit einem Android-Endgerät etwa in einem öffentlichen WLAN nutzt, kann Angreifern Tür und Tor öffnen.Im Update-Vorgang der Android-App Air Droid klafft eine gefährliche Schwachstelle, warnen Sicherheitsforscher von Zimperium.</p>
         </div>
-        <div id="three">
+    <hr>
+        <h1 style="color:black;">CSS paddings</h1>
+        <div id="pa-one">
+            <p>Chatbots sollen Messenger wie WhatsApp oder Hangouts revolutionieren. Das sehen mittlerweile Facebook und Google so. Dass Facebook an dem Helferlein "M" forscht, ist bekannt. Google soll aber seit mehr als einem Jahr an einem ähnlichen Projekt arbeiten.</p>
+        </div>
+        <div id="pa-two">
+            <p>Wer die Fernwartungs-App AirDroid mit einem Android-Endgerät etwa in einem öffentlichen WLAN nutzt, kann Angreifern Tür und Tor öffnen.Im Update-Vorgang der Android-App Air Droid klafft eine gefährliche Schwachstelle, warnen Sicherheitsforscher von Zimperium.</p>
+        </div>
+    <hr>
+        <h1 style="color:black;">CSS border</h1>
+        <div id="sq-a" class="square">
             <p>Spanische Kunden dürfen den kontaktlosen Bezahldienst für iPhone und Apple Watch seit dieser Woche nutzen. Deutsche Kunden warten weiter.</p>
         </div>
-        <div id="four">
-            <p>Microsoft holoportiert Leute aus dem Auto ins Büro Einer sitzt im Auto, virtuell aber im Büro bei einem Kollegen, der eine Hololens trägt: Microsoft arbeitet an in Echtzeit übertragbaren Hologrammen, allerdings klappt die Holoportation noch nicht mit mobilem Internet, sondern nur mit WLAN.</p>
+        <div id="sq-b" class="square">
+            <p>Microsoft holoportiert Leute aus dem Auto ins Büro Einer sitzt im Auto, virtuell aber im Büro bei einem Kollegen.</p>
         </div>
-
+        <div id="sq-c" class="square"><p><a href="https://wiki.selfhtml.org/wiki/CSS/Eigenschaften/%C3%A4u%C3%9Fere_Gestaltung/Rahmen/border-style">Rahmentypen</a></p></div>
+    <hr>
+        <h1 style="color:black;">URL</h1>
+        <p><a href="http://www.avajava.com/tutorials/lessons/how-are-margins-borders-padding-and-content-related.html">Grafik Margin Border Padding</a></p>
     <hr>
      <p><a href="../index.html">index</a></p>
     </body>
