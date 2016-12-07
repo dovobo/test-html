@@ -1,46 +1,59 @@
 <!doctype html>
 <html>
     <head>
-        <title>kap2 CSS margins padding borders</title>
-
+        <title>kap2 CSS fonts</title>
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
         <meta charset="utf-8" />
         <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <style type="text/css">
         /* Kommentare in CSS */
-            p {padding: 10px}
+            p { padding: 10px;
+                /* websafe fonts verwenden w3schools.com
+                Font-Family kann auch direkt im p-tag festgelegt werden
+                font-family: 'Indie Flower', cursive; */
+
+            }
             #one {
                 color: blue;
                 background-color: pink;
                 width: 350px;
+                font-family: monospace;
             }
             #two {
                 color:#FCFCFC;
                 background-color: #5F5F5F;
                 width:550px;
+                font-family: fantasy;
             }
             #three {
                 color:#FCFCFC;
                 background-color: #283847;
                 width:300px;
+                font-family: "Lucida Console", Monaco, monospace;
             }
             #four {
                 color:#FCFCFC;
                 background-color: greenyellow;
                 color: black;
                 width:450px;
+                font-family: 'Indie Flower', cursive;
             }
+
+            .bold{font-weight: bold;}
+            .bolditalic{font-style: italic;font-weight: bold;}
+            .underline{text-decoration: underline;}
 
         </style>
     </head>
     <body>
         <h1 style="color:black;">CSS margins</h1>
         <div id="one">
-            <p>Chatbots sollen Messenger wie WhatsApp oder Hangouts revolutionieren. Das sehen mittlerweile Facebook und Google so. Dass Facebook an dem Helferlein "M" forscht, ist bekannt. Google soll aber seit mehr als einem Jahr an einem ähnlichen Projekt arbeiten.</p>
+            <p>MONOSPACE - FONTS -Chatbots sollen Messenger wie WhatsApp oder Hangouts revolutionieren. Das sehen mittlerweile Facebook und Google so. Dass Facebook an dem Helferlein "M" forscht, ist bekannt. Google soll aber seit mehr als einem Jahr an einem ähnlichen Projekt arbeiten.</p>
         </div>
         <div id="two">
-            <p>Wer die Fernwartungs-App AirDroid mit einem Android-Endgerät etwa in einem öffentlichen WLAN nutzt, kann Angreifern Tür und Tor öffnen.Im Update-Vorgang der Android-App Air Droid klafft eine gefährliche Schwachstelle, warnen Sicherheitsforscher von Zimperium.</p>
+            <p>FANTASY - FONTS -Wer die Fernwartungs-App AirDroid mit einem Android-Endgerät etwa in einem öffentlichen WLAN nutzt, kann Angreifern Tür und Tor öffnen.Im Update-Vorgang der Android-App Air Droid klafft eine gefährliche Schwachstelle, warnen Sicherheitsforscher von Zimperium.</p>
         </div>
         <div id="three">
             <p>Chatbots sollen Messenger wie WhatsApp oder Hangouts revolutionieren. Das sehen mittlerweile Facebook und Google so. Dass Facebook an dem Helferlein "M" forscht, ist bekannt. Google soll aber seit mehr als einem Jahr an einem ähnlichen Projekt arbeiten.</p>
@@ -48,9 +61,14 @@
         <div id="four">
             <p>Wer die Fernwartungs-App AirDroid mit einem Android-Endgerät etwa in einem öffentlichen WLAN nutzt, kann Angreifern Tür und Tor öffnen.Im Update-Vorgang der Android-App Air Droid klafft eine gefährliche Schwachstelle, warnen Sicherheitsforscher von Zimperium.</p>
         </div>
+        <p class="bold">Das ist fetter Text</p>
+        <p class="bolditalic">Das ist fetter Text und noch italic/ kursiv</p>
+        <p class="underline">Das ist unsterstrichender Text</p>
+        <p class="bold">Das ist <mark>markierter</mark> Text</p>
     <hr>
         <h1 style="color:black;">URL</h1>
-        <p><a href="http://www.avajava.com/tutorials/lessons/how-are-margins-borders-padding-and-content-related.html">Grafik Margin Border Padding</a></p>
+        <p><a href="http://www.w3schools.com/cssref/css_websafe_fonts.asp"target="_blank">Websafe Fonts verwenden</a></p>
+        <p><a href="https://fonts.google.com/"target="_blank">GoogleFonts Fonts verwenden</a></p>
     <hr>
      <p><a href="../index.html">index</a></p>
     </body>
