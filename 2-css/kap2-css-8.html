@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title>kap2 CSS fonts</title>
+        <title>kap2 CSS fonts sylen</title>
         <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
         <meta charset="utf-8" />
         <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
@@ -10,6 +10,7 @@
         <style type="text/css">
         /* Kommentare in CSS */
             p { padding: 10px;
+
                 /* websafe fonts verwenden w3schools.com
                 Font-Family kann auch direkt im p-tag festgelegt werden
                 font-family: 'Indie Flower', cursive; */
@@ -20,18 +21,26 @@
                 background-color: pink;
                 width: 350px;
                 font-family: monospace;
+                text-align: right;
+
             }
             #two {
                 color:#FCFCFC;
                 background-color: #5F5F5F;
                 width:550px;
+                height: 200px;
                 font-family: fantasy;
+                text-align: center;
+
             }
             #three {
                 color:#FCFCFC;
                 background-color: #283847;
-                width:300px;
+                width:250px;
+                height: 300px;
                 font-family: "Lucida Console", Monaco, monospace;
+                text-align: justify;
+
             }
             #four {
                 color:#FCFCFC;
@@ -48,11 +57,13 @@
             a:hover{text-decoration: underline;color: green;}
             .big{font-size: 200%;}
             .transe{text-transform: uppercase;}
+            a:visited{color: red;}
+            a:link{color: crimson}
 
         </style>
     </head>
     <body>
-        <h1 style="color:black;">CSS fonts</h1>
+        <h1 style="color:black;">CSS fonts stylen</h1>
         <div id="one">
             <p>MONOSPACE - FONTS -Chatbots sollen Messenger wie WhatsApp oder Hangouts revolutionieren. Das sehen mittlerweile Facebook und Google so. Dass Facebook an dem Helferlein "M" forscht, ist bekannt. Google soll aber seit mehr als einem Jahr an einem ähnlichen Projekt arbeiten.</p>
         </div>
@@ -69,10 +80,12 @@
         <p class="bolditalic">Das ist fetter Text und noch italic/ kursiv</p>
         <p class="underline">Das ist unsterstrichender Text</p>
         <p class="bold">Das ist <mark>markierter</mark> Text</p>
-        <p><a href="">Das ist ein link der nicht unterstrichen ist</a></p>
         <p class="big">DAS IST BIG</p>
         <p class="transe">das wird alles groß geschrieben</p>
-    <hr>
+        <hr>
+        <h2 style="color:black;">CSS uri decoration</h2>
+        <p><a href="">Das ist ein link der nicht unterstrichen ist</a></p>
+        <hr>
         <h2 style="color:black;">URL</h2>
         <p><a href="http://www.w3schools.com/cssref/css_websafe_fonts.asp"target="_blank">Websafe Fonts verwenden</a></p>
         <p><a href="https://fonts.google.com/"target="_blank">GoogleFonts Fonts verwenden</a></p>
