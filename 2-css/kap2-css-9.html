@@ -10,38 +10,50 @@
 
         <style type="text/css">
         /* Kommentare in CSS */
-            .top {
-                height: 20px;
+            #topleiste {
                 background-color: #214472;
-
-
-
-
+                width: 100%;
+                float: left;
             }
+
+            #topleiste li {  list-style: none;
+                            float:left;
+            }
+            a:link { color: white;
+                    text-decoration: none;
+                font-size: 16 px;
+                padding: 10px 5px 1px 5px;
+            }
+            a:hover {
+                    color: blue;
+                    background-color: white
+            }
+
+
+            #top2 {text-align-last: right}
 
         </style>
     </head>
     <body>
-        <div class="top">
-            <ul id="top-font1">
+        <div id="topleiste">
+            <div id="top1">
+            <ul>
                 <li><a href="">ARD Home</a></li>
                 <li><a href="">Nachrichten</a></li>
                 <li><a href="">Sport</a></li>
                 <li><a href="">Börse</a></li>
                 <li><a href="">Ratgeber</a></li>
             </ul>
-            <ul id="top-font2">
-                <li><a href="">Fernseher</a></li>
-                <li><a href="">Radio</a></li>
-                <li><a href="">ARD Mediathek</a></li>
+            </div>
+            <div id="top2">
+            <ul>
+                <li><a href=""><b>Fernseher</b></a></li>
+                <li><a href=""><b>Radio</b></a></li>
+                <li><a href=""><b>ARD Mediathek</b></a></li>
             </ul>
-            <img src="http://www.ard.de/"
-
+            <img src="http://www.ard.de/">
+            </div>
 
         </div>
-
-
-
-
     </body>
 </html>
