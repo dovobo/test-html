@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
     <head>
-        <title>kap2 CSS fonts sylen</title>
+        <title>kap2-9-ARD-Seite CSS fonts sylen</title>
         <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
         <meta charset="utf-8" />
         <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
@@ -10,38 +10,50 @@
 
         <style type="text/css">
         /* Kommentare in CSS */
-            .top {
-                height: 20px;
-                background-color: #214472;
 
+            #topleiste{
+                    background-color: #214472;
+                    width: 100%;
+                    float: left;
+            }
 
+            #topleiste li {
+                list-style: none;
+                float: left
+            }
 
-
+            a:link {
+                color: white;
+                text-decoration: none;
+                font-size: 16px;
+                padding: 10px 5px 1px 5px;
+            }
+            a:hover {
+                background-color: white;
+                color: black;
+                text-decoration: none;
             }
 
         </style>
     </head>
+
     <body>
-        <div class="top">
+        <div id="topleiste">
             <ul id="top-font1">
                 <li><a href="">ARD Home</a></li>
                 <li><a href="">Nachrichten</a></li>
                 <li><a href="">Sport</a></li>
                 <li><a href="">Börse</a></li>
                 <li><a href="">Ratgeber</a></li>
+
+                <li><span style="padding-left:40px;"></span></li>
+
+                <li><a href=""><b>Fernseher</b></a></li>
+                <li><a href=""><b>Radio</b></a></li>
+                <li><a href=""><b>ARD Mediathek</b></a></li>
+                <li><img src="https://s14-eu5.ixquick.com/cgi-bin/serveimage?url=https:%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F6%2F68%2FARD_logo.svg%2F2000px-ARD_logo.svg.png&sp=9f3f30f4511bce6fd2bcda4da96a45e2" width="75px" /></li>
             </ul>
-            <ul id="top-font2">
-                <li><a href="">Fernseher</a></li>
-                <li><a href="">Radio</a></li>
-                <li><a href="">ARD Mediathek</a></li>
-            </ul>
-            <img src="http://www.ard.de/"
 
-
-        </div>
-
-
-
-
+                 </div>
     </body>
 </html>
