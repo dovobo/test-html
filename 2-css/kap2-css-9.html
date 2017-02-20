@@ -8,56 +8,88 @@
         <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <style type="text/css">
+<style type="text/css">
         /* Kommentare in CSS */
+            body{
+          /*   background-image: url(https://s14-eu5.ixquick.com/cgi-bin/serveimage?url=https:%2F%2Fi.ytimg.com%2Fvi%2FEAeinX5Ob_s%2Fmaxresdefault.jpg&sp=194796486e7545efc44b8c58ec2665cd);  */
+            }
+            .festebreite {
+                width: 1050px;
+                margin: auto;
 
-
+            }
             #topleiste{
                     background-color: #214472;
                     width: 100%;
                     float: left;
             }
-
             #topleiste li {
                 list-style: none;
                 float: left
             }
-
-            a:link {
+            #topleiste a:link {
                 color: white;
                 text-decoration: none;
                 font-size: 16px;
                 padding: 10px 5px 1px 5px;
             }
-            a:hover {
+            #topleiste a:visited{
+                color: white;
+                text-decoration: none;
+            }
+            #topleiste a:hover {
                 background-color: white;
                 color: black;
                 text-decoration: none;
             }
+            #ardlogo {
+                content: url(http://www.ard.de/pool/img/ard/banner/logo_base.png);
+                width: 250px;
+            }
+            #suchfeld{
+                float:right;
+                position: relative;
+                top: -40px;
+                left: -260px;
 
+            }
+            #suchfeld_input {
+                height: 20px;
+                background-image: url(http://www.ard.de/pool/img/base/icon/lupe_gross.png);
+                background-repeat: no-repeat;
+                background-position: right;
+                background-size: 20px;
+            }
         </style>
     </head>
 
     <body>
         <div id="topleiste">
-            <div id="top1">
             <ul>
-
                 <li><a href="">ARD Home</a></li>
                 <li><a href="">Nachrichten</a></li>
                 <li><a href="">Sport</a></li>
                 <li><a href="">Börse</a></li>
                 <li><a href="">Ratgeber</a></li>
 
-
                 <li><span style="padding-left:40px;"></span></li>
 
                 <li><a href=""><b>Fernseher</b></a></li>
                 <li><a href=""><b>Radio</b></a></li>
                 <li><a href=""><b>ARD Mediathek</b></a></li>
+
+                <li><span style="padding-left:20px;"></span></li>
+
                 <li><img src="https://s14-eu5.ixquick.com/cgi-bin/serveimage?url=https:%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F6%2F68%2FARD_logo.svg%2F2000px-ARD_logo.svg.png&sp=9f3f30f4511bce6fd2bcda4da96a45e2" width="75px" /></li>
             </ul>
-
+        </div>
+        <div class="festebreite">
+            <div id="ardlogo"> </div>
+            <div id="suchfeld">
+                <input type="text" placeholder="Suche" />
             </div>
+
+        </div>
+
     </body>
 </html>
