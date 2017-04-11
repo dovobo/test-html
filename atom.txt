@@ -31,12 +31,14 @@ apm install git-plus
     Ctrl + Shift + P >> Git Command eingeben
 apm install atom-shortcuts
         https://atom.io/packages/atom-shortcuts
+apm install shortcuts-teacher
 
 ShortCut HotKey
 
     Ctrl+Shift+P
 
-
+Note
+  Emmet bei Gelegenheit
 
 URI
 http://www.elmastudio.de/10-nuetzliche-atom-texteditor-erweiterungen-fuer-webentwickler/
