@@ -4,6 +4,11 @@ Zeile verschieben = Ctrl + Up (or Down)
 Select the next matching characters = markieren und CTRL + D
 Select all matching characters = ALT + F3
 Toggle comments (on and off) = Ctrl + /
+Zeichenfolge löschen = Ctrl + Backspace
+Text vergrößern/ verkleinern = Ctrl + + or -
+
+
+
 
 Für die autocomplet ohne < schreiben
 
@@ -13,10 +18,10 @@ apm install project-manager
 apm install git-plus
 apm install minimap
 apm install pigments
+
 apm install atom-shortcuts
 
-
-ShortCut
+ShortCut HotKey
 
     Ctrl+Shift+P
     Ctrl+Shift+H » GitPlus
