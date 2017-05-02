@@ -5,7 +5,16 @@
     <title></title>
   </head>
   <body>
-    <?php $syscontact = snmpget("1.1.1.5", "flsblu", "system.SysContact."); ?>
-    <?php echo $syscontact ?>
+
+
+    <?php
+
+    $ip="1.1.1.5";
+    $com="2748638";
+
+    $syscontact = snmpget($ip,$com ,"system.SysContact.");
+
+    echo $syscontact;
+    ?>
   </body>
 </html>
