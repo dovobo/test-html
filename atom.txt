@@ -7,19 +7,20 @@ Toggle comments (on and off) = Ctrl + /
 Zeichenfolge löschen = Ctrl + Backspace
 Text vergrößern/ verkleinern = Ctrl + + or -
 
-
-
-
 Für die autocomplet ohne < schreiben
 
 Packed
+=====================
+apm install minimap pigments color-picker file-icons highlight-selected minimap-highlight-selected atom-alignment project-manager git-plus atom-shortcuts shortcuts-teacher
+
+und nochmal einzeln
 
 apm install autosave >> aktiviren in den settings
 apm install minimap >> minimap
 apm install pigments >> Farbwerte angezeigt bekommen
 apm install color-picker >> Farben aussuchen
 apm install file-icons >> farbige Icons im tree
-apm install highlight-selected minimap-highlight-selected
+apm install  highlight-selected minimap-highlight-selected
 apm install atom-alignment
     ctrl+alt+a >> Elemente ordnen
 apm install project-manager
@@ -30,11 +31,10 @@ apm install git-plus
     Ctrl + Shift + H
     Ctrl + Shift + P >> Git Command eingeben
 apm install atom-shortcuts
-        https://atom.io/packages/atom-shortcuts
+    https://atom.io/packages/atom-shortcuts
 apm install shortcuts-teacher
 
 ShortCut HotKey
-
     Ctrl+Shift+P
 
 Note
@@ -42,5 +42,4 @@ Note
 
 URI
 http://www.elmastudio.de/10-nuetzliche-atom-texteditor-erweiterungen-fuer-webentwickler/
-
 http://d2wy8f7a9ursnm.cloudfront.net/atom-editor-cheat-sheet.pdf
